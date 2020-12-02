@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-<title>i08-Menu</title>
-<style>
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden; 
-      background-color: #1d1de9;
-    }
-    
-    li {
-      float: left;
-    }
-    
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 16px;
-      text-decoration: none;
-    }
-    
-    li a:hover {
-      background-color: #111111;
-    }
+  <head>
+    <title>i08- Image</title>
+    <style>
+      img {
+        height: 380px;
+        width: 400px;
+      }
+      body{
+        background-image: url('https://www.w3schools.com/html/img_girl.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
     </style>
-</head>
+  </head>
+  <body>
+      <div style="text-align: center; display: none;">
+    <img
+      src="https://www.w3schools.com/html/pic_trulli.jpg"
+      alt="This is image one"
+      title="This is image one"
+    />
+    <!-- <p>he image will float to the left of the text.</p> -->
 
-<body>
-    <h2>Navigation Menu</h2>
-    <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
-    
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
+    <img
+      src="https://www.w3schools.com/html/img_girl.jpg"
+      alt="This is image two"
+      title="This is image two"
+    />
+    <!-- <p>he image will float to the left of the text.</p> -->
+    <img
+      src="https://www.w3schools.com/html/img_chania.jpg"
+      alt="This is image three"
+      title="This is image three"
+    />
+</div>
+    <hr style="display: none;">
+    <p><h3>This is map image with area tag</h3></p>
+    <img src="https://www.w3schools.com/html/workplace.jpg" usemap="#workmap">
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/phone.htm" target="_blank">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/html/computer.htm" target="_blank">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.w3schools.com/html/coffee.htm" target="_blank">
+    </map>
 
-</body>
+    <picture>
+      <source srcset="https://www.w3schools.com/html/img_chania.jpg">
+        <source srcset="https://www.w3schools.com/html/pic_trulli.jpg">
+          <img src="https://www.w3schools.com/html/img_girl.jpg">
+
+    </picture>
+
+
+
+  </body>
 </html>

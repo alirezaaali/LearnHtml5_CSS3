@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-<title>i07-Links</title>
-<style>
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
+  <head>
+    <title>i07-Links</title>
+    <style>
+      /* a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
 
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
 
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
 
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
-</style>
-</head>
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      } */
+      a:link,
+      a:visited {
+        background-color: green;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
 
-<body>
-<h3>Links</h3>
-<a href="http://www.w3schools.com" target="_blank">Visit W3schools Now</a>
+      a:hover,
+      a:active {
+        background-color: black;
+      }
+      body {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
 
-
-</body>
+  <body>
+    <h3>Links</h3>
+    <a href="http://www.w3schools.com" target="_blank">Visit W3schools Now</a>
+    <!-- <br />
+    <a href="http://www.w3schools.com" target="_blank">
+      <img src="images/smily.gif" alt="Go to W3schools"
+      style="width:250px;height:250px"
+    </a> -->
+  </body>
 </html>
