@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First - Exercise</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      /* div {
+        border: 1px solid black;
+      } */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header {
+        background-color: black;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        margin-bottom: 8px;
+      }
+      main {
+        margin: 8px 0;
+      }
+      nav {
+        /* float: left; */
+        /* width: 30%; */
+        height: auto; /*only for demonstration, should be removed */
+        background: #ccc;
+        padding: 5px;
+        padding-left: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .article {
+        float: left;
+        width: 50%;
+        background-color: #f1f1f1;
+        height: 300px; /* only for demonstration, should be removed */
+        margin-bottom: 5px;
+      }
+      .Rarticle {
+        padding-left: 10px;
+      }
+      .Larticle {
+        padding-right: 10px;
+      }
+
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      .main-container-bottom::after {
+        clear: both;
+        display: table;
+        content: "";
+      }
+      .main-container-bottom {
+        margin-top: 8px;
+      }
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>Header</div>
+    </header>
+    <main>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Tree</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-container-bottom">
+        <section class="article Larticle">
+          afaafa
+          <!-- <div style="background-color: yellow">this is left artile</div> -->
+        </section>
+        <section class="article Rarticle">
+          sdadasdasd
+          <!-- <div style="background-color: yellow">this is right artile</div> -->
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div>this is footer</div>
+    </footer>
+  </body>
+</html>
