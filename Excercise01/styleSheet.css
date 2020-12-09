@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  margin-bottom: 8px;
+}
+main {
+  margin: 8px 0;
+}
+nav {
+  /* float: left; */
+  /* width: 30%; */
+  height: auto; /*only for demonstration, should be removed */
+  background: #ccc;
+  padding: 5px;
+  padding-left: 10px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.article {
+  float: left;
+  width: 50%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+  margin-bottom: 5px;
+}
+.Rarticle {
+  padding-left: 10px;
+}
+.Larticle {
+  padding-right: 10px;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  min-height: 100px;
+}
+.main-container-bottom::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+.main-container-bottom {
+  margin-top: 8px;
+}
+.LarticleInside {
+  width: 90%;
+}
+.RarticleInsideText {
+  float: left;
+  width: 50%;
+}
+
+.RarticleInsideImag {
+  width: 50%;
+  float: right;
+}
+.divInsidearticle {
+  padding: 8px;
+  border: 1px solid black;
+}
+
+@media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
