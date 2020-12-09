@@ -27,6 +27,12 @@ nav ul {
   list-style-type: none;
   padding: 0;
 }
+nav ul li a {
+  text-decoration: none;
+}
+.main-container-bottom {
+  margin-top: 8px;
+}
 .article {
   float: left;
   width: 50%;
@@ -34,31 +40,20 @@ nav ul {
   height: 300px; /* only for demonstration, should be removed */
   margin-bottom: 5px;
 }
-.Rarticle {
-  padding-left: 10px;
-}
 .Larticle {
   padding-right: 10px;
-}
-
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  min-height: 100px;
-}
-.main-container-bottom::after {
-  clear: both;
-  display: table;
-  content: "";
-}
-.main-container-bottom {
-  margin-top: 8px;
 }
 .LarticleInside {
   width: 90%;
 }
+.divInsidearticle {
+  padding: 8px;
+  /* border: 1px solid black; */
+}
+.Rarticle {
+  padding-left: 10px;
+}
+
 .RarticleInsideText {
   float: left;
   width: 50%;
@@ -68,9 +63,18 @@ footer {
   width: 50%;
   float: right;
 }
-.divInsidearticle {
-  padding: 8px;
-  border: 1px solid black;
+.main-container-bottom::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  min-height: 100px;
 }
 
 @media (max-width: 600px) {
