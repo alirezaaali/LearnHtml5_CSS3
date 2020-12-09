@@ -16,9 +16,6 @@ main {
   margin: 8px 0;
 }
 nav {
-  /* float: left; */
-  /* width: 30%; */
-  height: auto; /*only for demonstration, should be removed */
   background: #ccc;
   padding: 5px;
   padding-left: 10px;
@@ -36,19 +33,15 @@ nav ul li a {
 .article {
   float: left;
   width: 50%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+  background-color: transparent;
   margin-bottom: 5px;
 }
 .Larticle {
   padding-right: 10px;
 }
-.LarticleInside {
-  width: 90%;
-}
 .divInsidearticle {
   padding: 8px;
-  /* border: 1px solid black; */
+  background-color: thistle;
 }
 .Rarticle {
   padding-left: 10px;
@@ -68,6 +61,10 @@ nav ul li a {
   display: table;
   content: "";
 }
+img {
+  width: 100%;
+  height: 100%;
+}
 
 footer {
   background-color: #777;
@@ -75,6 +72,9 @@ footer {
   text-align: center;
   color: white;
   min-height: 100px;
+}
+.img-container {
+  margin-bottom: 16px;
 }
 
 @media (max-width: 600px) {
