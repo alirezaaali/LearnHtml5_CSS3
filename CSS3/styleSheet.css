@@ -45,11 +45,11 @@ ul {
   background-color: gainsboro;
 }
 
-li {
+.topmenu {
   float: left;
 }
 
-li a {
+.topmenulinks {
   display: block;
   color: black;
   text-align: center;
@@ -57,7 +57,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.topmenulinks:hover {
   background-color: #111111;
   color: whitesmoke;
 }
@@ -118,7 +118,9 @@ p.farsiVazirBody {
   line-height: 1.5;
   text-align: right;
 }
-
+.navfooter li {
+  float: left;
+}
 .main-container-bottom::after {
   clear: both;
   display: table;
@@ -130,12 +132,21 @@ img {
 }
 
 footer {
-  background-color: #777;
-  padding: 10px;
+  background: gainsboro;
+  padding: 4px;
   text-align: center;
   color: white;
-  min-height: 100px;
+  /* min-height: 100px; */
+  width: 100%;
+  float: left;
 }
+.navfooter {
+  padding: 4px;
+}
+a.socialmedia {
+  padding: 4px;
+}
+
 .img-container {
   margin-bottom: 16px;
 }
