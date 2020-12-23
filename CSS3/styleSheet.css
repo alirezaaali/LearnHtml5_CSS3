@@ -176,7 +176,28 @@ a.socialmedia {
 }
 
 .img-container {
-  margin-bottom: 16px;
+  margin: 4px 0px 0 0px;
+  background-color: whitesmoke;
+  padding: 16px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: whitesmoke;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  color: #076555;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 @media (max-width: 600px) {
