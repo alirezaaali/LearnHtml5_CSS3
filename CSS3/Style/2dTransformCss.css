@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 8px;
+  background-color: skyblue;
+}
+div {
+  padding: 4px;
+  margin: 4px;
+  border: 1px solid teal;
+  border-radius: 10px;
+}
+/* --------------------------------- */
+div#translate {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+div#translate:hover {
+  -ms-transform: translate(100px, 100px); /* IE 9 */
+  transform: translate(50px, 5px); /* Standard syntax */
+  opacity: 0.5;
+}
+/* ------------------------------------------ */
+div#rotate {
+  width: 120px;
+  height: 85px;
+  margin: 50px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#rotate:hover {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  transform: rotate(90deg); /* Standard syntax */
+  opacity: 0.5;
+}
+/* --------------------------------- */
+div#scale {
+  margin: 100px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+div#scale:hover {
+  -ms-transform: scale(1.5, 1.5); /* IE 9 */
+  transform: scale(2, 2); /* Standard syntax */
+  opacity: 0.5;
+}
+/* --------------------------------------- */
+div#transinWidth {
+  width: 100px;
+  height: 100px;
+  background: red;
+  opacity: 0.5;
+  transition: width 5s, opacity 5s, height 5s, background-color 5s, transform 5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+}
+
+div#transinWidth:hover {
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+  background-color: thistle;
+  transform: rotate(360deg);
+}
